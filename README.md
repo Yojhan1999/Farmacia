@@ -1,2 +1,0 @@
-# Farmacia
-LenguajeDeProgramacion3
