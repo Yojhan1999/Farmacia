@@ -7,6 +7,9 @@ const path = require('path');
 //inicio
 const app = express();
 
+router.get('/',async(req,res) =>{
+    res.render('index/indexFarmacia');
+});
 
 router.get('/indexFarmacia',(req,res)=>{
     res.render('index/indexFarmacia');
