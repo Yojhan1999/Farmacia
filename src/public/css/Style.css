@@ -22,34 +22,34 @@ header, section {
   --Patua: "Patua One", cursive;
   --Lobster: "lobster", cursive;
   --light-black: #2e2c2caf;
-  --bggradient: linear-gradient(to bottom,black, red);
-  --light-gray: rgba(255, 255, 255, 0.877);
+  --bggradient: linear-gradient(to bottom,greenyellow,rgba(145, 245, 117, 0.849));
+  --light-gray: rgb(0, 0, 0);
 }
 
 header a {
   font-family: Unispace;
-  font-size: 1.5em;
-  color: whitesmoke;
+  font-size: 1.6em;
+  color: rgb(0, 0, 0);
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: #000000;
+  min-width: 150px;
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: rgb(248, 248, 248);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgb(0, 0, 0);
 }
 
 .dropdown:hover .dropdown-content {
@@ -57,28 +57,28 @@ header a {
 }
 
 header .nav-item:last-child {
-  padding-right: 10.5em;
+  padding-right: 11.5em;
 }
 
 header .nav-item {
-  padding: 0.9em;
+  padding: 1.1em;
 }
 
 header .navbar-brand {
-  padding-left: 8rem;
+  padding-left: 9rem;
 }
 
 header .nav-link:hover {
-  color: black;
+  color:rgb(255, 255, 255);
 }
 
 .Texto {
   margin: auto;
-  font-family: Unispace;
+  font-family: fantasy;
   font-size: 30px;
-  color: #f1f1f1;
-  padding: 22.10vmin 1vmin;
-  padding-bottom: 15vmin;
+  color: #000000;
+  padding: 8vmin 1vmin;
+  padding-bottom: 10vmin;
 }
 header .row .col-md-5 {
   margin:0px; 
@@ -123,13 +123,13 @@ header .container .col-md-7 p {
 /********** section 1 **************/
 
 .section-1 {
-  padding: 20vmin 0vmin;
+  padding: 10vmin 0vmin;
 }
 
 .section-1 .row .col-md-6 .pray img {
-  opacity: 0.8;
-  width: 80%;
-  border-radius: 0.2em;
+  opacity: 1;
+  width: 100%;
+  border-radius: 1em;
 }
 
 .section-1 .row .col-md-6:last-child {
@@ -138,12 +138,12 @@ header .container .col-md-7 p {
 
 .section-1 .row .col-md-6 .panel {
   position: absolute;
-  top: 7vmin;
-  left: -18vmin;
-  background:red;
-  border-radius: 3px;
+  top: 2vmin;
+  left: -10vmin;
+  background:rgba(145, 245, 117, 0.849);
+  border-radius: 30px;
   text-align: left;
-  padding: 13vmin 5vmin 20vmin 10vmin;
+  padding: 10vmin 8vmin 15vmin 8vmin;
   box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
   font-family: var(--Rubik);
   z-index: 1;
@@ -154,17 +154,17 @@ header .container .col-md-7 p {
   color: white;
   text-align: center;
   font-weight: bold;
-  padding: 0.4em 0;
+  padding: 1em 0;
   font-size: 2em;
-  background: red;
+  background: rgba(145, 245, 117, 0.849);
 }
 
 .section-1 .row .col-md-6 .panel p {
   font-family: Unispace;
   font-size: 1.2em;
-  color: white;
+  color:black;
   text-align: center;
-  background: black;
+  background: greenyellow ;
   
 }
 
@@ -210,7 +210,7 @@ header .container .col-md-7 p {
 .numbers .rect {
   position: relative;
   z-index: 1;
-  background: white;
+  background: rgb(117, 245, 78);
   width: 17rem;
   height: 12rem;
   padding-top: 3.5vmin;
@@ -407,7 +407,7 @@ body {
 	color:#777777;
 	line-height:1.7em;
 	font-weight:400;
-	background:#ffffff;
+	background:rgba(145, 245, 117, 0.849);
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	font-family: 'Ubuntu', sans-serif;
@@ -506,6 +506,13 @@ img{
 	display:inline-block;
 	max-width:100%;
 }
+.logo{
+  width: 100px;
+  height: 100px;
+}
+.logo2{
+ margin-left:-300px;
+}
 
 /*** 
 ====================================================================
@@ -589,7 +596,7 @@ img{
 
 .accordion-box .block .acc-btn.active{
 	background-color:#222222;
-	color:#ffffff;
+	color:#87eb05;
 }
 
 .accordion-box .block .icon-outer{
@@ -676,7 +683,7 @@ img{
 }
 
 body{
-	background: #E0E4E5;
+  background:url("/img/fondo.jpg");
 	font-family: 'Open Sans', sans-serif;
 }
 

@@ -1,14 +1,14 @@
 const express = require('express');
 const morgan = require('morgan');
-const exprhbs = require('express-handlebars');
+const exphbs = require('express-handlebars');
 const path = require ('path');
 
 //inicio
 const app = express();
 //configuracion
-app.set('port',process.env.PORT || 8000);
+app.set('port',process.env.PORT || 4000);
 app.set('views',path.join(__dirname,'views'));
-app.engine('.hbs',exprhbs({
+app.engine('.hbs',exphbs({
     defaultLayout:'main',
     layoutsDir:path.join(app.get('views'),'layouts'),
     partialsDir:path.join(app.get('views'),'partials'),
@@ -19,6 +19,7 @@ app.engine('.hbs',exprhbs({
 app.set('view engine','.hbs');
 
 //peticiones
+app.use(morgan('dev'));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 //Variables globales
@@ -28,9 +29,11 @@ app.use((req,res,next)=>{
 //rutas
 
 app.use('/notas',require('./routes/notas'));
+app.use('/index',require('./routes/index'));
 
-
-
+//public
+app.use(express.static(path.join(__dirname,'public')));
+// iniciar server
 app.listen(app.get('port'),()=>{
 
     console.log('server on port',app.get('port'));
