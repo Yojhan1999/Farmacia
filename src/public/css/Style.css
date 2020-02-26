@@ -198,13 +198,13 @@ header .container .col-md-7 p {
 .cover .content > h1 {
   font-family: var(--Patua);
   font-size: 6vmin;
-  color: whitesmoke;
+  color: black;
 }
 
 .cover .content > p {
   font-family: var(--Rubik);
-  font-size: 2vmin;
-  color: #e5e5e5;
+  font-size: 3vmin;
+  color: white;
 }
 
 .numbers .rect {
@@ -239,7 +239,7 @@ header .container .col-md-7 p {
 }
 
 .purchase > p {
-  color: var(--light-black);
+  color: var(--light-white);
   font-size: 3vmin;
   padding-bottom: 10vmin;
 }
@@ -293,7 +293,7 @@ header .container .col-md-7 p {
 .section-3 .col-md-12 > p {
   padding: 0 4em;
   padding-bottom: 2em;
-  color: var(--light-gray);
+  color: var(--light-aliceblue);
   font-size: 3vmin;
 }
 
@@ -347,9 +347,10 @@ header .container .col-md-7 p {
 }
 
 footer {
-  background: rgba(0, 0, 0, 0.815);
+  background:rgba(0, 128, 0, 0.712);
   overflow-x: hidden;
   padding: 14vmin 18vmin;
+  color: aliceblue;
 }
 
 footer p > span {
@@ -361,7 +362,7 @@ footer input {
 }
 
 footer input::placeholder {
-  color: white !important;
+  color: black !important;
 }
 
 footer .input-group .input-group-text {
@@ -370,7 +371,7 @@ footer .input-group .input-group-text {
 }
 
 footer .column i {
-  color:blueviolet;
+  color:black;
 }
 
 /* It is Adjacent sibling combinator */
@@ -383,7 +384,7 @@ footer .column i + i {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.815);
+  background: rgb(0, 0, 0);
   z-index: 9999;
   transition: all 1.5s ease;
 }
@@ -404,7 +405,7 @@ footer .column i + i {
 
 body {
 	font-size:14px;
-	color:#777777;
+	color:black;
 	line-height:1.7em;
 	font-weight:400;
 	background:rgba(145, 245, 117, 0.849);
@@ -420,7 +421,7 @@ body {
 a{
 	text-decoration:none;
 	cursor:pointer;
-	color:#1c63b8;
+	color:#030507;
 }
 
 a:focus{
@@ -475,7 +476,8 @@ h6{
 
 p{
 	position:relative;
-	line-height:1.8em;	
+  line-height:1.8em;
+  color: antiquewhite;	
 }
 
 .auto-container{
@@ -535,18 +537,18 @@ img{
 
 .sec-title h1{
 	position: relative;
-    color:#222222;
+    color:#000000;
     font-weight: 700;
     line-height: 1.3em;
 	margin-top:5px;
 }
 
 .sec-title.light h1{
-	color:#ffffff;
+	color:#000000;
 }
 
 .sec-title.light .title-inner:before{
-	background-color:#777777;
+	background-color:#000000;
 }
 
 .sec-title.centered{
@@ -595,7 +597,7 @@ img{
 }
 
 .accordion-box .block .acc-btn.active{
-	background-color:#222222;
+	background-color:#000000;
 	color:#87eb05;
 }
 
@@ -604,7 +606,7 @@ img{
 	right:20px;
 	top:18px;
 	font-size:20px;
-	color: #262626;
+	color: #000000;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -617,7 +619,7 @@ img{
 	right: 0px;
 	width:30px;
 	height:30px;
-	color:#ffffff;
+	color:#020202;
   font-size: 14px;
   text-align: center;
 	line-height:32px;
@@ -662,7 +664,7 @@ img{
 .accordion-box .block .content .accordian-text{
 	line-height:1.9em;
 	font-size:16px;	
-	color:#84858a;
+	color:#000000;
 	font-weight:400;
 }
 
@@ -695,7 +697,7 @@ body{
 }
 
 .wrap > h1{
-	color: #494B4D;
+	color: rgb(0, 0, 0);
 	font-weight: 400;
 	display: flex;
 	flex-direction: column;
@@ -742,7 +744,7 @@ body{
 	padding: 8px 0;
 	background: #2D3E50;
 
-	color: #fff;
+	color: rgb(7, 7, 7);
 	text-align: center;
 	text-decoration: none;
 }
