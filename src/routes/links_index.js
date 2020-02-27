@@ -19,4 +19,7 @@ router.get('/about',async(req,res)=>{
 router.get('/productos',async(req,res)=>{
     res.render('links_index/productos')
 });
+router.get('/carrito',async(req,res)=>{
+    res.render('links_index/carrito')
+});
 module.exports = router;

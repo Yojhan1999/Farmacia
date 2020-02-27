@@ -16,6 +16,7 @@ router.get('/indexFarmacia',(req,res)=>{
 });
 
 
+
 app.use(express.static('public'));
 app.use(express.static('lib'))
 module.exports = router;
