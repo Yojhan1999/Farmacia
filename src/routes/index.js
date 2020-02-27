@@ -13,7 +13,8 @@ router.get('/',async(req,res) =>{
 
 router.get('/indexFarmacia',(req,res)=>{
     res.render('index/indexFarmacia');
-})
+});
+
 
 app.use(express.static('public'));
 app.use(express.static('lib'))
