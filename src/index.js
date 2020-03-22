@@ -33,8 +33,8 @@ app.use('/index',require('./routes/index'));
 app.use('/links_index',require('./routes/links_index'));
 app.use('/links_admin',require('./routes/links_admin'));
 app.use('/links_customer',require('./routes/links_customer'));
-app.use('/links_employed',require('./routes/links_employed'))
-
+app.use('/links_employed',require('./routes/links_employed'));
+app.use('/parcial',require('./routes/parcial'));
 
 //public
 app.use(express.static(path.join(__dirname,'public')));

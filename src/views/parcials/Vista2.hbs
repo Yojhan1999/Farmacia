@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TablaDeMultiplicar</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="" class="nav-link" href="#">
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/parcial/parcial" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/parcial/parcial" class="nav-link">Triangulo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/parcial/Vista2" class="nav-link">Vista2</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="body">
+                <fieldset>
+                    <label>Tabla de multiplicar</label>
+                    <div class="form-label-group">
+                        <label>Opcion 1</label>
+                        <br>
+                        <input type="text" id="numero">
+                        <br>
+                        <input type="button" onclick="Realizar();" value="Realizar">
+
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <script>
+        function Realizar(){
+           var Multiplica =document.getElementById('numero').value;
+            for(var i = 0; i< 10; i++){
+                document.write(""+tabla+" X "+i+"="+(i*Multiplica)+"<br>");
+            }
+        }
+    </script>
+</body>
+</html>
