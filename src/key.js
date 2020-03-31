@@ -1,8 +1,8 @@
 module.exports={
     database:{
-        host: '',
-        user: '',
+        host: 'localhost',
+        user: 'root',
         password:'',
-        database:''
+        database:'farmacia'
     }
 };
