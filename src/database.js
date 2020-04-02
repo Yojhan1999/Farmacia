@@ -17,7 +17,7 @@ if (err){
     }
 }
 if(Connection) Connection.release();
-//Console.log('conectada');
+console.log('conectada');
 return;
 });
 pool.query=promisify(pool.query);
