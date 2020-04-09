@@ -3,6 +3,7 @@ const router = express.Router();
 const productos = require('../Taller.json');
 const pool =require('../database');
 
+<<<<<<< HEAD
 router.get('/', async(req,res)=>{
     const produTodos = await pool.query('select * from productos');
     //res.json(produTodos);
@@ -24,3 +25,5 @@ router.post('/adminVentaProducto',async(req,res)=>{
 });
 Console.log()
 module.exports = router;
+=======
+>>>>>>> aa76c122450ba3ab60d41a345efa9a38a1f30e51

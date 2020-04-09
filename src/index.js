@@ -5,7 +5,10 @@ const path = require ('path');
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aa76c122450ba3ab60d41a345efa9a38a1f30e51
 //inicio
 const app = express();
 //configuracion
