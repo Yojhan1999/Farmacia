@@ -1,34 +1,43 @@
- <!DOCTYPE html>
-   <html lang="en">
-   <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-     <title class="Texto">Farmacia 24/7</title>
-   </head>
-   <body>
-     <header>
-       <div class="container-fluid p-0">
-         <nav class="navbar navbar-expand-lg">
-           <a class="navbar-brand" href="/">
-             <i class="fas fa-icono fa-2x mx-3" ></i></p> <img class="logo" src="/img/farmaIcono.gif" alt="First slide" /> AQUI LO CONSIGUE</a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-             <i class="fas fa-align-right text-light"></i>
-           </button>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title class="Texto">Farmacia 24/7</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/">
+          <i class="fas fa-icono fa-2x mx-3"></i></p> <img class="logo" src="/img/farmaIcono.gif" alt="First slide" />
+          AQUI LO CONSIGUE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="mr-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/index/index_admin">HOME
-                <span class="sr-only">(current)</span>
+              <a class="nav-link" href="#">HOME</a>
+              <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/links_admin/links_admin_usuarios">USUARIOS</a>
+              <a class="nav-link" href="/admint_venta/holis">COMENTARIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/links_admin/links_admin_productos">PRODUCTOS</a>
+              <a class="nav-link" href="/admint_venta/adminVentaUsuario">USUARIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admint_venta/adminVentaProducto">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admint_venta/agg">AGG</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/">CERRAR SESION</a>
@@ -39,14 +48,186 @@
     </div>
     <div class="container text-center">
       <div class="row">
-        <div class="Texto" >
+        <div class="Texto">
           AUTHOR: Yojhan Alexis Gutierrez Penagos<br><br>
-             No cambies la salud por la riqueza, ni la libertad por el poder<br><br>
-        <div class="col-md-5 col-sm-12  h-25">
-          <marquee SCROLLAMOUNT="10" direction="right">
-              <img  src="/img/farmaLocu.gif" alt="First slide" />
-          </marquee>
+          No cambies la salud por la riqueza, ni la libertad por el poder<br><br>
+          <div class="col-md-5 col-sm-12  h-25">
+            <marquee SCROLLAMOUNT="10" direction="right">
+              <img src="/img/farmaLocu.gif" alt="First slide" />
+            </marquee>
+          </div>
+        </div>
+      </div>
+  </header>
+  <div class="TablaCarrito">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-body">
+            <!--<section>
+          <div class="col-md-6">
+            <form action="#" method="post">
+              <input type="text" name="nombreProducto">
+              <input type="submit" class="btn btn-danger" value="Buscar">
+            </form>
+            <a href="/" class="btn btn-success">Refrescar</a>
+          </div>
+        </section>-->
+            <section>
+              <h1 style="text-align: left;">
+                PRODUCTOS
+              </h1>
+              <form action="#" method="POST">
+                <div class="form-group">
+                  <h1>Agregar Producto</h1>
+                </div>
+                <div id="form-group">
+                  <label>Nombre del Producto U.</label>
+                  <input value="" class="form-control" type="text" name="nombreProducto" />
+                </div>
+                <div id="form-group">
+                  <label>Cantidad</label>
+                  <input value="" class="form-control" type="number" name="cantidadProducto" />
+                </div>
+                <div id="form-group">
+                  <label>Precio</label>
+                  <input value="" class="form-control" type="text" name="precioProducto" />
+                </div>
+                <div class="form-group">
+                  <label>Codigo</label>
+                  <input value="" class="form-control" type="text" name="codigoProducto" />
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-success btn-block">agregar</button>
+                </div>
+              </form>
+              <table class="table table-dark" id="tabla">
+                <thead>
+                  <tr>
+                    <strong>
+                      <th scope="row">#</th>
+                      <th scope="row">NOMBRE DEL PRODUCTO</th>
+                      <th scope="row">CANTIDAD DEL PRODUCTO</th>
+                      <th scope="row">PRECIO DEL PRODUCTO</th>
+                      <th scope="row">CODIGO DEL PRODUCTO</th>
+                    </strong>
+                  </tr>
+                </thead>
+                <tbody bgcolor="green">
+                  {{#each Tablaproducto}}
+                  <tr>
+                    <td>{{id_producto}}</td>
+                    <td>{{nombreProducto}}</td>
+                    <td>{{cantidadProducto}}</td>
+                    <td>{{precioProducto}}</td>
+                    <td>{{codigoProducto}}</td>
+                    <td class="">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#eliminarProducto{{id_producto}}">
+                        Eliminar
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="eliminarProducto{{id_producto}}" tabindex="-1" role="dialog"
+                        aria-labelledby="eliminarProductolabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="eliminarProducto">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <h1 style="color: red;">Esta seguro de eliminar</h1>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
+                              <a href="/admint_venta/delete/{{id_producto}}" class="btn btn-danger">Eliminar</a>
+                              {{!-- <button type="submit" class="btn btn-danger">Eliminar</button> --}}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Eliminar producto -->
+                    </td>
+                    <td>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#modificarProducto{{id_producto}}">
+                        Modificar el Producto
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="modificarProducto{{id_producto}}" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <form action="/admint_venta/modificar-producto/{{id_producto}}" method="post">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" style="color: red;" id="exampleModalLabel">Modificar</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div id="form-group">
+                                  <label style="color: blue;">Nombre del Producto U.</label>
+                                  <input value="{{nombreProducto}}" class="form-control" type="text"
+                                    name="nombreProducto" />
+                                </div>
+                                <div id="form-group">
+                                  <label style="color: blue;">Cantidad</label>
+                                  <input value="{{cantidadProducto}}" class="form-control" type="number"
+                                    name="cantidadProducto" />
+                                </div>
+                                <div id="form-group">
+                                  <label style="color: blue;">Precio</label>
+                                  <input value="{{precioProducto}}" class="form-control" type="text"
+                                    name="precioProducto" />
+                                </div>
+                                <div class="form-group">
+                                  <label style="color: blue;">Codigo</label>
+                                  <input value="{{codigoProducto}}" class="form-control" type="text"
+                                    name="codigoProducto" />
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
+                                <button type="submit" class="btn btn-primary">Actualizar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </td>
+                  </tr>
+                  {{/each}}
+                </tbody>
+              </table>
+              </center>
+            </section>
+          </div>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+  <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h3 class="text-light">Sobre Nosotros</h4>
+            <h4>Fundacion Escuela Tecnologia | NIT 1075321265 | FarmaLocu | 8770959 | Cra 51D # 24 - 41 |
+              yojhan_gutierrezpe@fet.edu.co © 2020 (Súper intendencia de industria y comercio
+          </h3>
+          <p class="text-muted">
+          </p>
+          <p>Copyright ©2020 Derechos Reservados.
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

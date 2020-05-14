@@ -3,6 +3,9 @@ const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const path = require ('path');
 
+
+
+
 //inicio
 const app = express();
 //configuracion
@@ -28,13 +31,12 @@ app.use((req,res,next)=>{
 });
 //rutas
 app.use(require('./routes'));
-app.use(require('./routes/authentication'));
 app.use('/index',require('./routes/index'));
 app.use('/links_index',require('./routes/links_index'));
-app.use('/links_admin',require('./routes/links_admin'));
-app.use('/links_customer',require('./routes/links_customer'));
-app.use('/links_employed',require('./routes/links_employed'));
-app.use('/parcial',require('./routes/parcial'));
+app.use('/admint_venta',require('./routes/links_admin'));
+app.use('/employed',require('./routes/links_employed'));
+app.use('/customer',require('./routes/links_customer'));
+
 
 //public
 app.use(express.static(path.join(__dirname,'public')));
@@ -43,4 +45,3 @@ app.listen(app.get('port'),()=>{
     console.log('server on port',app.get('port'));
 });
 
- 

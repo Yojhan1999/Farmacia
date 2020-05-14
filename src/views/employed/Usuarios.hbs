@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title class="Texto">Farmacia 24/7</title>
+</head>
+<body>
+    <header>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/">
+            <i class="fas fa-icono fa-2x mx-3" ></i></p> <img class="logo" src="/img/farmaIcono.gif" alt="First slide" /> AQUI LO CONSIGUE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="/employed/holis">HOME
+                <span class="sr-only">(current)</span>
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/employed/empleado">PEDIDOS DE USUARIO</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/employed/Usuarios">TUS USUARIO</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/">CERRAR SESION</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    </div>
+    <div class="container text-center">
+    <div class="row">
+        <div class="Texto" >
+        AUTHOR: Yojhan Alexis Gutierrez Penagos<br><br>
+            No cambies la salud por la riqueza, ni la libertad por el poder<br><br>
+        <div class="col-md-5 col-sm-12  h-25">
+        <marquee SCROLLAMOUNT="10" direction="right">
+            <img  src="/img/farmaLocu.gif" alt="First slide" />
+        </marquee>
+        </div>
+    </div>
+    </div>
+</header>
+<form action="/customer/registroUsuario" class="mx-auto" method="POST">
+                <div class="form-group">
+                    <h1>Registrar Usuario</h1>
+                </div>
+                <div id="form-group">
+                    <label>Nombre</label>
+                    <input value="" class="form-control" type="text" placeholder="Digite su nombres" name="nombreUsuario" />
+                </div>
+                <div id="form-group">
+                    <label>Apellido</label>
+                    <input value="" class="form-control" type="text" placeholder="Digite su apellidos" name="apellidoUsuario" />
+                </div>
+                <div id="form-group">
+                    <label>Edad</label>
+                    <input value="" class="form-control" type="number" placeholder="Digite su edad" name="edadUsuario" />
+                </div>
+                <div class="form-group">
+                    <label>Cedula</label>
+                    <input value="" class="form-control" type="number" placeholder="Digite su cedula" name="cedulaUsuario" />
+                </div>
+                <div class="form-group">
+                    <label>Telefono</label>
+                    <input value="" class="form-control" type="number"placeholder="Digite su telefono" name="telefonoUsuario" />
+                </div>
+                <div class="form-group">
+                    <label>Direccion</label>
+                    <input value="" class="form-control" type="text" placeholder="Digite su direccion" name="direccion" />
+                </div>
+                <div class="form-group">
+                    <label>Correo</label>
+                    <input value="" class="form-control" type="email" placeholder="Digite su correo" name="correo" />
+                </div>
+                <div class="form-group">
+                    <input value="" class="form-control" type="password" placeholder="Digite su contraseña" name="contra" />
+                    <label>Contraseña</label>
+                </div>
+                <div class="form-group">
+                    <label >selecione su tipo de registro</label>
+                    <select class="form-control" name="rol">
+                    <option value="2">Cliente</option>
+                </select>
+                </div>
+                <div class="form-group">  
+                    <button type="submit" class="btn btn-success btn-block">agregar</button>
+                </div>
+    </form> 
+
+
+
+<footer>
+    <div class="container-fluid p-0">
+        <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+            <h3 class="text-light">Sobre Nosotros</h4>
+            <h4>Fundacion Escuela Tecnologia | NIT 1075321265 | FarmaLocu | 8770959 | Cra 51D # 24 - 41 | yojhan_gutierrezpe@fet.edu.co © 2020 (Súper intendencia de industria y comercio</h3>
+            <p class="text-muted">
+            </p>
+            <p >Copyright ©2020 Derechos Reservados.
+            </p>
+        </div>
+        </div>
+    </div> 
+</body>
+</html>
